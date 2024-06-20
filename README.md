@@ -9,14 +9,19 @@
 최종 목표는 다양한 배경과 경험을 가진 자취생들 간의 지식 공유와 상호 지원을 촉진하며 자취생들이 함께 소통하고 더 나은 자취의 삶을 가질 수 있는 공간을 제공하는 것입니다.
 
 ### 기술 스택
-## 기술 스택
-
-
+---
 | 분야        | 아이콘                                                                                           |
 |-------------|--------------------------------------------------------------------------------------------------|
 | IDE         | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" /> <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white"  />  |
 | FRONTEND    | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"/>                |
 | SERVER      | <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white"  /> <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=flat&logo=amazon-aws&logoColor=white" /> <img src="https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white"  />               |
-| DB          | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazon-aws&logoColor=white"  />               |
+| DB          | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/AWS_RD|S-527FFF?style=flat&logo=amazon-aws&logoColor=white"  />               |
 | API         | <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat&logo=kakao&logoColor=black" />        |
 
+### 팀소개
+---
+
+|담당   |내용   |
+|:-------:|:-------:|
+|김수민<br>(프론트엔드 및 백엔드)|회원가입, 로그인, 비밀번호 기능<br>|
+|이승아|AWS EC2, RDS 구축|
