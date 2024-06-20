@@ -33,3 +33,4 @@
 ### ERD
 ![자취어때_ERD](https://github.com/soomni01/Jachwi/assets/113577375/86a54951-dc42-4345-b883-8efb3f906fd8)
 
+### 작품 화면
