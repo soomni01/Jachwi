@@ -14,9 +14,9 @@
 
 | 분야        | 아이콘                                                                                           |
 |-------------|--------------------------------------------------------------------------------------------------|
-| IDE         | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white" width="40" />  |
-| FRONTEND    | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" width="40" />                |
-| SERVER      | <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=flat&logo=amazon-aws&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white" width="40" />               |
-| DB          | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazon-aws&logoColor=white" width="40" />               |
-| API         | <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat&logo=kakao&logoColor=black" width="40" />        |
+| IDE         | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" /> <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white"  />  |
+| FRONTEND    | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"/>                |
+| SERVER      | <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white"  /> <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=flat&logo=amazon-aws&logoColor=white" /> <img src="https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white"  />               |
+| DB          | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazon-aws&logoColor=white"  />               |
+| API         | <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat&logo=kakao&logoColor=black" />        |
 
