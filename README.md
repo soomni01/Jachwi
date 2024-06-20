@@ -27,3 +27,5 @@
 |이승아|AWS EC2, RDS를 구축하고 서비스 배포 <br> 마이페이지 기능 구현 <br> NGINX를 이용하여 웹서버 구축<br> 사이트 메인 이미지 제작|
 |홍성진|socket.io를 활용한 채팅 기능<br> 게시판 작성 기능 구현<br> 게시글 댓글 대댓글 기능|
 
+### ERD
+![Example Image](images/ERD.png)
