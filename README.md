@@ -1,6 +1,6 @@
-## 자취 어때
+# 자취 어때
 ---
-#### 프로젝트 소개
+### 프로젝트 소개
 ---
 `자취어때`는 자취생들이 혼자 사는 동안 겪게 되는 다양한 문제들을 해결하고 서로 돕는 웹 커뮤니티 사이트로 음식, 생활 팁, 주거 문제 등 다양한 주제에 대해 정보를 공유하고 의사소통할 수 있습니다. 
 
@@ -8,12 +8,12 @@
 
 최종 목표는 다양한 배경과 경험을 가진 자취생들 간의 지식 공유와 상호 지원을 촉진하며 자취생들이 함께 소통하고 더 나은 자취의 삶을 가질 수 있는 공간을 제공하는 것입니다.
 
-#### 기술 스택
+### 기술 스택
 ## 기술 스택
 
 | 분야        | 기술                      | 아이콘                                                                                           |
 |-------------|---------------------------|--------------------------------------------------------------------------------------------------|
-| IDE         | VSCode                    | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" /> |
+| IDE         | VSCode                    | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" /> <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white" />  |
 |             | MySQL Workbench           | <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white" />    |
 | 프론트엔드  | React                     | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />                |
 | 서버        | Nginx                     | <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />                |
