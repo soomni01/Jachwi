@@ -28,4 +28,5 @@
 |홍성진|socket.io를 활용한 채팅 기능<br> 게시판 작성 기능 구현<br> 게시글 댓글 대댓글 기능|
 
 ### ERD
-![Example Image](images/ERD.png)
+![자취어때_ERD](https://github.com/soomni01/Jachwi/assets/113577375/86a54951-dc42-4345-b883-8efb3f906fd8)
+
