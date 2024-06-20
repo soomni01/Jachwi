@@ -28,8 +28,7 @@
 |홍성진|socket.io를 활용한 채팅 기능<br> 게시판 작성 기능 구현<br> 게시글 댓글 대댓글 기능|
 
 ### 포스터
-![자취어때_포스터](https://github.com/soomni01/Jachwi/assets/113577375/c72691a9-d3a2-4c6f-872c-e5ba8ccd1467)
-
+<img src="https://github.com/soomni01/Jachwi/assets/113577375/c72691a9-d3a2-4c6f-872c-e5ba8ccd1467" width="200" height="400" />
 ### ERD
 ![자취어때_ERD](https://github.com/soomni01/Jachwi/assets/113577375/86a54951-dc42-4345-b883-8efb3f906fd8)
 
