@@ -10,7 +10,8 @@
 
 ### 기술 스택
 ## 기술 스택
-<div style="width: 70%; margin: 0 auto;">
+
+
 | 분야        | 아이콘                                                                                           |
 |-------------|--------------------------------------------------------------------------------------------------|
 | IDE         | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white" width="40" />  |
@@ -18,4 +19,4 @@
 | SERVER      | <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=flat&logo=amazon-aws&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white" width="40" />               |
 | DB          | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" width="40" /> <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazon-aws&logoColor=white" width="40" />               |
 | API         | <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat&logo=kakao&logoColor=black" width="40" />        |
-</div>
+
