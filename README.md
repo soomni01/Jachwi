@@ -11,13 +11,10 @@
 ### 기술 스택
 ## 기술 스택
 
-| 분야        | 기술                      | 아이콘                                                                                           |
-|-------------|---------------------------|--------------------------------------------------------------------------------------------------|
-| IDE         | VSCode                    | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" /> <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white" />  |
-|             | MySQL Workbench           | <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white" />    |
-| 프론트엔드  | React                     | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />                |
-| 서버        | Nginx                     | <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" />                |
-|             | AWS EC2                   | <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=flat&logo=amazon-aws&logoColor=white" />         |
-| DB          | MySQL                     | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />                |
-|             | AWS RDS                   | <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazon-aws&logoColor=white" />         |
-| API         | Kakao Map API             | <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat&logo=kakao&logoColor=black" />        |
+| 분야        | 아이콘                                                                                           |
+|-------------|--------------------------------------------------------------------------------------------------|
+| IDE         | <img src="https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white" /> <img src="https://img.shields.io/badge/MySQL_Workbench-4479A1?style=flat&logo=mysql&logoColor=white" />  |
+| FRONTEND    | <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />                |
+| SERVER      | <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white" /> <img src="https://img.shields.io/badge/AWS_EC2-232F3E?style=flat&logo=amazon-aws&logoColor=white" />                |
+| DB          | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat&logo=amazon-aws&logoColor=white" />               |
+| API         | <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat&logo=kakao&logoColor=black" />        |
