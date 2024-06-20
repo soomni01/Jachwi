@@ -34,3 +34,5 @@
 ![자취어때_ERD](https://github.com/soomni01/Jachwi/assets/113577375/86a54951-dc42-4345-b883-8efb3f906fd8)
 
 ### 작품 화면
+![자취어때_작품화면1](https://github.com/soomni01/Jachwi/assets/113577375/9ac95bb6-0a42-4443-9d67-e0668c13dda2)
+![자취어때_작품화면2](https://github.com/soomni01/Jachwi/assets/113577375/47eea4e1-50b7-4acb-b4a3-1dbc2c16ea34)
