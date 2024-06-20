@@ -1,0 +1,487 @@
+body {
+  overflow: hidden; /* 전체 화면 스크롤바 제거 */
+}
+
+.chat-component-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+  max-height: 100vh;
+  margin-top: 105px;
+}
+
+.left-container {
+  width: 15%; /* 너비를 30%로 설정 */
+  margin-left: 30px;
+}
+
+.make-chat-button {
+  border: none;
+  border-radius: 20px;
+  font-size: 22px;
+  font-family: "NPS";
+  padding: 20px 20px 20px 20px;
+  margin-left: 10px;
+  background-color: darkseagreen;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+  height: 80px;
+}
+
+.left-container h1 {
+  margin-left: 30px;
+}
+
+.myChatList {
+  max-height: calc(80vh - 150px); /* 최대 높이 설정 */
+  overflow-y: auto; /* 수직 스크롤을 활성화 */
+}
+
+.myChatList::-webkit-scrollbar {
+  display: none;
+}
+
+.myChatList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* 기본 마진 제거 */
+}
+
+.myChatList li {
+  background-color: #f0f0f0; /* 회색 배경색 */
+  padding: 15px; /* 패딩 설정 */
+  margin-bottom: 15px; /* 아이템 사이 여백 설정 */
+  border-radius: 10px; /* 모서리 둥글게 만듦 */
+  font-size: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden; /* 넘치는 부분을 숨김 */
+  text-overflow: ellipsis; /* 초과된 부분을 ...으로 표시 */
+  align-items: center;
+  height: 30px;
+  line-height: 30px; /* li의 높이와 일치하도록 조정 */
+}
+
+.myChatList li:hover {
+  background-color: gray;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #ddd;
+  margin: 0 20px;
+  margin-top: -30px;
+  height: 100%;
+}
+
+.right-container {
+  flex: 3;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-content: flex-start; /* 줄 간격 줄이기 */
+  overflow-y: auto;
+  margin-top: 50px;
+  max-height: 80vh;
+}
+
+.right-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-search-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  margin-top: 120px;
+  margin-right: 50px;
+}
+
+.chat-search-container input[type="text"] {
+  padding: 8px 12px; /* 입력란 내부 여백 설정 */
+  border: 1px solid #ccc; /* 테두리 스타일 지정 */
+  border-radius: 5px; /* 테두리 모서리 둥글게 만듭니다. */
+  font-size: 16px; /* 글자 크기 설정 */
+  background-color: #f4f4f4; /* 배경색 설정 */
+  color: #333; /* 글자색 설정 */
+  font-family: "NPS";
+  height: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fafafa;
+  width: calc(33.333% - 30px);
+  min-height: 250px; /* 최소 높이 설정 */
+  height: 30%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  margin: 5px 5px 30px;
+  font-size: 24px;
+}
+
+.description {
+  margin: 0 0 5px;
+  font-size: 18px;
+  height: 100px;
+}
+
+.createdby {
+  margin: 3px 0 20px;
+  text-align: left;
+}
+
+.chat-low {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  flex-direction: row;
+}
+
+.join-button-container {
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.joinChatButton {
+  border: none;
+  background-color: transparent;
+  color: darkcyan;
+  white-space: nowrap;
+  font-size: 22px;
+  font-family: "NPS";
+  cursor: pointer;
+}
+
+.joinChatButton:hover {
+  color: rgb(2, 92, 92);
+}
+
+.chatroom-information {
+  flex: display;
+  flex-direction: row;
+}
+
+.createdat {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .right-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.card p {
+  margin-left: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button-container {
+  margin-right: 5px;
+}
+
+.delete-chat-button {
+  color: #fff;
+  font-family: "NPS";
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.delivery-image {
+  width: 28px;
+  height: 28px;
+  margin-top: -5px;
+  margin-right: 10px;
+  vertical-align: middle; /* 이미지를 수직으로 가운데 정렬 */
+}
+.modal-delete-chat {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* 세로와 가로의 절반만큼 이동하여 중앙에 정렬 */
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  width: 400px;
+  height: 150px;
+}
+
+.modal-delete-chat h2 {
+  font-size: 25px;
+  margin-top: 12px;
+}
+
+.modal-delete-chat p {
+  font-size: 16px;
+  margin-top: -8px;
+  margin-left: 2px;
+  margin-bottom: 45px;
+}
+
+.modal-delete-chat-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 13px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: NPS;
+}
+
+.confirm-button {
+  background-color: darkseagreen;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #333;
+}
+
+.mobile-chat {
+  display: none;
+}
+
+/* 모바일 뷰에서 채팅 컴포넌트 레이아웃 조정 */
+@media (max-width: 768px) {
+  .left-container {
+    display: none;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  .vertical-line {
+    display: none; /* 모바일에서 세로 구분선 숨김 */
+  }
+
+  .mobile-chat {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .moblieFirstLow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .chatSidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* 왼쪽으로 숨김 */
+    width: 280px;
+    height: 100%;
+    background-color: #f5f5f5;
+    transition: left 0.3s ease; /* 트랜지션 효과 */
+    z-index: 999; /* 사이드바가 위에 올라오도록 설정 */
+  }
+
+  .chatSidebar.chatactive {
+    left: 0; /* 왼쪽으로 나타남 */
+  }
+
+  .chatOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
+    z-index: 998; /* 사이드바보다 낮은 레이어 */
+    display: none; /* 보이도록 설정 */
+  }
+
+  /* 사이드바가 열렸을 때 오버레이 표시 */
+  .chatOverlay.chatactive {
+    display: block;
+  }
+
+  .toggleMyChatButton {
+    border: none;
+    cursor: pointer;
+  }
+
+  /* 토글 버튼 스타일링 */
+  .toggleMyChatButton :hover {
+    background-color: #555;
+  }
+
+  .chat-search-container {
+    margin-top: 200px;
+    right: 0;
+    margin-right: 1px;
+  }
+
+  .chat-search-container input[type="text"] {
+    font-size: 12px;
+    padding: 4px;
+    height: 20px;
+    margin-top: 5px;
+    width: 83%;
+  }
+
+  .searchButton {
+    margin-left: 1px;
+  }
+
+  .myChatList {
+    max-height: 95%; /* 원하는 높이로 조정하세요 */
+    overflow: hidden;
+  }
+
+  .myChatList h2 {
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .myChatListContent {
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+
+  .myChatList li {
+    font-size: 16px;
+    width: 80%;
+    margin-left: 10px;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .moblie-chat-list {
+    margin-top: 30px;
+    height: 70%;
+    padding: 0;
+    overflow-y: scroll;
+  }
+
+  .mobile-chat-list::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨기기 */
+  }
+
+  .moblie-chat-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .moblie-chat-list ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* 각 채팅방 아이템을 구분하는 경계선 */
+    min-height: 50%;
+    margin-bottom: 20px;
+  }
+
+  .moblie-chat-list ul li:last-child {
+    border-bottom: none; /* 마지막 채팅방 아이템의 경계선 제거 */
+  }
+
+  .card-header h3 {
+    font-size: 20px;
+    height: 10px;
+  }
+
+  .description {
+    font-size: 16px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .createdby {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .createdat {
+    font-size: 12px;
+  }
+
+  .join-button-container {
+    margin-bottom: 10px;
+  }
+
+  .joinChatButton {
+    font-size: 18px;
+  }
+
+  .delete-chat-button {
+    width: 30px;
+  }
+
+  .toggleMyChatButton {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .make-chat-button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 50%;
+    height: 45px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  .mychat-text {
+    font-size: 12px;
+    margin-left: 5px;
+    color: darkcyan;
+  }
+  .modal-delete-chat {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .modal-delete-chat p {
+    margin-left: 0;
+  }
+
+  .confirm-button,
+  .cancel-button {
+    width: 21%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,107 @@
+.chatcreateroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 100vh; /* 화면 전체 높이 차지 */
+}
+
+.chatroom_main {
+  padding: 20px 40px 40px 40px;
+  border: 1px solid darkseagreen;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.chatroom_main .inputTag,
+.chatroom_main .inputTag2 {
+  position: relative;
+  width: 100%;
+}
+
+.chatroom_main .inputTag input,
+.chatroom_main .inputTag2 input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #f3f3f3;
+  padding: 30px 0px 10px 15px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "NPS";
+}
+
+.chatroom_main .inputTag input:focus-within,
+.chatroom_main .inputTag2 input:focus-within {
+  border: 1px solid darkseagreen;
+}
+
+.validation {
+  visibility: hidden;
+}
+
+.chatroom_main .inputTag input + label,
+.chatroom_main .inputTag2 input + label {
+  display: block;
+  position: absolute;
+  text-align: left;
+  width: Fixed (41px);
+  height: Fixed (14px);
+  top: 10px;
+  left: 15px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.24px;
+}
+
+.createRoomButton {
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: "NPS";
+  padding: 20px 20px 20px 20px;
+  margin-left: 80%;
+  background-color: darkseagreen;
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) and (max-height: 2316px) {
+  .chatcreateroom {
+    flex-direction: column;
+    height: 75vh;
+    margin-top: 140px;
+  }
+  .chatroom_main {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .chatroom_main h1 {
+    font-size: 20px;
+  }
+  .chatroom_main h3 {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .chatroom_main .inputTag input {
+    height: 20px;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .chatroom_main .inputTag2 input {
+    height: 40px;
+    font-size: 12px;
+  }
+  .createRoomButton {
+    margin-left: 60%;
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,349 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* 네비게이션 바 위로 배치 */
+}
+
+.main-image {
+  margin-top: 100px; /* 네비게이션 바 바로 아래에 위치하도록 조정 */
+  max-width: 100%; /* 이미지의 최대 너비를 화면의 너비에 맞춤 */
+  height: auto;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainlist-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 50%;
+  margin-top: 10px;
+}
+.mainPosts {
+  flex: 0.8;
+}
+.deliveryPosts {
+  margin-left: 50px;
+  flex: 1;
+  width: 80%;
+}
+
+.mainlist-container h2 {
+  margin-left: 80px;
+  white-space: nowrap;
+  font-size: 28px;
+}
+
+.mainTable {
+  margin: 20px;
+  margin-left: 60px;
+  border-radius: 20px;
+  height: 30%;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.mainTable th {
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+  padding: 15px;
+  border-bottom: 2px solid grey;
+}
+.mainTable th:nth-child(1) {
+  width: 50%; /* 글 번호 구간 너비 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px; /* 제목의 최대 너비 설정 */
+}
+
+.mainTable th:nth-child(2) {
+  width: 25%; /* 제목 구간 너비 */
+}
+
+.mainTable th:nth-child(3) {
+  width: 25%; /* 작성자 구간 너비 */
+}
+
+.mainTable td {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.mainTable tbody :hover {
+  background-color: #f9f9f9;
+}
+
+.DeliveryList {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.delivery-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.DeliveryList li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  width: 80%;
+}
+
+.DeliveryList li:hover {
+  background-color: #f9f9f9;
+}
+
+.category,
+.postName,
+.deliveryArea,
+.delivery-people,
+.validDate,
+.postTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.category {
+  margin-left: 20px;
+  font-size: 16px;
+  color: rgb(235, 245, 235);
+  border-radius: 20px;
+  background-color: darkseagreen;
+  padding: 10px;
+  margin-top: 8px;
+  height: 18px;
+}
+
+.postName {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.deliveryArea {
+  display: flex;
+  margin-left: 20px;
+  border: 1px solid #666;
+  border-radius: 20px;
+  padding: 5px;
+  height: 25px;
+  cursor: pointer;
+  margin-top: 7px;
+  margin-right: 30px;
+}
+.deliveryArea :hover {
+  color: darkcyan;
+}
+
+.validDate {
+  margin-top: 15px;
+  margin-left: 30px;
+  color: darkred;
+}
+.second-row {
+  display: flex;
+}
+.main-people-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.main-post-area {
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer; /* 커서 모양 변경 */
+  color: inherit; /* 기본 색상 상속 */
+}
+.main-category-image {
+  display: none;
+}
+
+@media (min-width: 401px) {
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .main-image {
+    content: url("../../assets/main-image.jpg");
+  }
+}
+@media screen and (max-width: 450px) and (max-height: 2316px) {
+  body {
+    height: 100%;
+    overflow: hidden; /* 전체 스크롤 비활성화 */
+  }
+  .main-image {
+    content: url("../../assets/main-image6.png");
+  }
+  .main-image {
+    margin-top: 130px; /* 네비게이션 바 바로 아래에 위치하도록 조정 */
+    max-width: 100%; /* 이미지의 최대 너비를 화면의 너비에 맞춤 */
+    width: 100%;
+    height: auto;
+  }
+
+  .main-image img {
+    width: auto;
+  }
+
+  .mainlist-container {
+    width: 100%; /* 전체 화면의 두 배 너비로 설정 */
+    flex-direction: column;
+    height: calc(100vh - 300px); /* 화면 높이에서 네비게이션 바 높이를 뺀 값 */
+    margin-top: 0px;
+    overflow-y: auto; /* 스크롤 가능하도록 변경 */
+  }
+  .mainlist-container::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨기기 */
+  }
+  .mainlist-container h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .mainTable {
+    margin: 0 auto;
+    border-radius: 20px;
+    border-collapse: collapse;
+    width: 90%;
+  }
+
+  .mainTable th {
+    font-weight: bold;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+  }
+
+  .mainTable td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0px 10px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .postTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px; /* 제목의 최대 너비 설정 */
+  }
+
+  /* 추가: 제목을 감싸고 있는 td 요소의 최대 너비 설정 */
+  .mainTable td:nth-child(1) {
+    max-width: 150px; /* 제목의 최대 너비 설정 */
+  }
+
+  .deliveryPosts {
+    margin-left: 0px;
+    border-top: 1px solid gainsboro;
+    margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .deliveryPosts h2 {
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+  .DeliveryList {
+    margin-top: 10px;
+    max-height: calc(100vh - 200px); /* 최대 높이 설정 */
+  }
+  .DeliveryList li {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .category {
+    font-size: 10px;
+    padding: 5px;
+    margin: 0px;
+    width: 10%;
+    display: none;
+  }
+  .validDate {
+    display: none;
+  }
+  .postName {
+    font-size: 12px;
+    margin: 0px;
+    flex: 0 0 45%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .deliveryArea {
+    margin: 0px;
+    height: 20px;
+    width: 100px;
+    padding: 3px;
+    flex: 0 0 30%;
+  }
+  .main-post-area {
+    font-size: 9px;
+    margin: 0px;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .main-marker-icon {
+    width: 15%;
+    height: 50%;
+    margin-top: 5px;
+  }
+  .second-row {
+    display: block;
+    flex-direction: row;
+  }
+  .main-people-icon {
+    width: 15px;
+    height: 15px;
+    margin: 0px;
+    margin-left: 8px;
+    margin-right: 5px;
+  }
+  .main-category-image {
+    display: block;
+    width: 80%;
+    height: 50%;
+  }
+  .main-category {
+    flex: 0 0 10%;
+  }
+  .delivery-people {
+    font-size: 10px;
+    flex: 0 0 20%;
+  }
+}

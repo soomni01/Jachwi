@@ -1,0 +1,142 @@
+.mypagechangepw-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
+  margin-left: 410px;
+  width: 75%;
+  height: 80vh;
+  position: relative;
+  margin-top: 145px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.mypagechangepw-container h1 {
+  font-size: 30px;
+  margin-bottom: -10px;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.mypagechangepw-container h4 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-left: 200px;
+  color: gray;
+}
+
+.mypagechangepw-container label {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 200px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.mypagechangepw-container input[type="password"] {
+  width: 70%;
+  height: 30px;
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mypagechangepw-container input[type="password"]:focus {
+  outline: none;
+  border-color: darkseagreen;
+  box-shadow: 1px solid darkseagreen;
+}
+
+.mypagechangepw-container button {
+  width: 71.5%;
+  height: 46px;
+  margin-left: 200px;
+  margin-top: 10px;
+  background-color: darkseagreen;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: NPS;
+}
+
+.errormessage {
+  color: red;
+  font-size: 15px;
+  margin-top: -10px;
+  margin-left: 200px;
+}
+
+.message {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 200px;
+  color: #ccc;
+}
+
+@media screen and (max-width: 904px) and (max-height: 2316px) {
+  .mypagechangepw-container {
+    margin-left: 2.5%;
+    width: 95%;
+    height: 75vh;
+    margin-top: 150px;
+  }
+
+  .mypagechangepw-container h1 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  .mypagechangepw-container h4 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+  }
+
+  .mypagechangepw-container label {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .mypagechangepw-container input[type="password"] {
+    width: 90%;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .mypagechangepw-container button {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .errormessage {
+    color: red;
+    font-size: 9.5px;
+    margin-top: -10px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .message {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #ccc;
+  }
+}

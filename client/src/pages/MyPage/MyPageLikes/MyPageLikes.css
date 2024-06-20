@@ -1,0 +1,128 @@
+.mypagelikes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
+  margin-left: 410px;
+  width: 75%;
+  height: 80vh;
+  position: relative;
+  margin-top: 145px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+/* MyPageLikes.css */
+.text-like {
+  padding: 30px;
+  margin-left: 30px;
+}
+/* 테이블의 각 행(게시물) 사이의 간격을 설정합니다. */
+.mypage-likes-table {
+  border-collapse: collapse; /* 테이블 테두리를 병합하여 테두리 간격을 제거합니다. */
+  width: 90%;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mypage-likes-table th {
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.mypage-likes-table th:nth-child(1) {
+  width: 40%;
+}
+.mypage-likes-table th:nth-child(2) {
+  width: 20%;
+}
+.mypage-likes-table th:nth-child(3) {
+  width: 20%;
+}
+.mypage-likes-table th:nth-child(4) {
+  width: 20%;
+}
+.mypage-likes-table td:nth-child(1) {
+  cursor: pointer;
+}
+
+/* 테이블 행(게시물)의 스타일을 설정합니다. */
+.mypage-likes-table tr {
+  border-bottom: 1px solid #ddd; /* 테두리 선을 추가하여 행(게시물) 사이의 간격을 만듭니다. */
+}
+
+/* 테이블 셀(열)의 스타일을 설정합니다. */
+.mypage-likes-table td {
+  padding: 12px; /* 셀(열)의 안쪽 여백을 설정합니다. */
+  text-align: center;
+  height: 40px;
+  border-bottom: 1px solid black;
+}
+
+/* 좋아요 버튼의 스타일을 설정합니다. */
+.like-icon {
+  width: 30px; /* 버튼의 너비를 설정합니다. */
+  height: 30px; /* 버튼의 높이를 설정합니다. */
+  padding: 0; /* 내부 여백을 제거합니다. */
+  border: none; /* 테두리를 없앱니다. */
+  background: none; /* 배경을 없앱니다. */
+  cursor: pointer;
+}
+
+.mypage-pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* 게시글과 pagination 사이의 간격 조정 */
+  height: 30px;
+}
+
+@media screen and (max-width: 904px) and (max-height: 2316px) {
+  .mypage-likes-table {
+    display: none;
+  }
+
+  .like-list {
+    display: block;
+    height: 75vh;
+  }
+
+  .mypagelikes-container {
+    margin-left: 2.5%;
+    width: 95%;
+    height: 75vh;
+    margin-top: 150px;
+    overflow-y: auto;
+  }
+
+  .mypagelikes-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-like {
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: -10px;
+  }
+
+  .like-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 260px;
+    margin-top: -50px;
+    margin-bottom: 25px;
+  }
+
+  .mypage-pagination-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 905px), screen and (min-height: 2317px) {
+  .like-list {
+    display: none;
+  }
+}

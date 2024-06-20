@@ -1,0 +1,238 @@
+.post-item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+  height: 130px;
+  margin-bottom: 30px;
+}
+
+.post-left {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-image {
+  width: 80%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+.post-center {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+.post-top {
+  display: flex;
+  align-items: center;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-category {
+  margin-left: 20px;
+  font-size: 14px;
+  color: rgb(235, 245, 235);
+  border-radius: 20px;
+  background-color: darkseagreen;
+  padding: 8px;
+}
+
+.post-content {
+  font-size: 16px;
+  height: 20px;
+  width: 100%;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.post-location {
+  font-size: 16px;
+}
+
+.area {
+  display: flex;
+  margin-left: 30px;
+  border: 1px solid #666;
+  border-radius: 20px;
+  padding: 5px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.marker-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.post-area {
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer; /* 커서 모양 변경 */
+  color: inherit; /* 기본 색상 상속 */
+}
+.post-area:hover {
+  color: darkcyan;
+}
+
+.people {
+  display: flex;
+  margin-left: 30px;
+}
+.people-img {
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.participant-num {
+  margin-right: 5px;
+}
+.max-num {
+  margin-left: 5px;
+}
+
+.post-right {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  right: 0;
+  margin-bottom: 70px;
+  margin-right: 30px;
+}
+
+.valid-date {
+  margin-right: 30px;
+  color: darkred;
+}
+.post-image-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 400px) and (max-height: 2316px) {
+  .post-image-mobile {
+    display: inline;
+    height: 15px;
+    width: 15px;
+    margin-left: 3px;
+  }
+  .post-item {
+    margin-bottom: 15px;
+  }
+  .post-content {
+    display: none;
+  }
+  .post-title {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 50px);
+  }
+  .post-category {
+    font-size: 10px;
+    margin-left: 3px;
+    padding: 5px;
+    white-space: nowrap;
+  }
+  .post-date {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .post-top {
+    margin-top: -5px;
+    margin-bottom: 0px;
+  }
+  .post-bottom {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .post-location {
+    font-size: 12px;
+  }
+  .area {
+    margin-left: 10px;
+    height: 20px;
+  }
+  .post-area {
+    font-size: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .marker-icon {
+  }
+  .people {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .people-img {
+    width: 15px;
+    margin-top: 8px;
+    margin-right: 3px;
+  }
+  .participant-num {
+    margin-right: 3px;
+  }
+  .max-num {
+    margin-left: 3px;
+  }
+  .post-right {
+    display: flex;
+    margin-top: -15px;
+    align-items: end;
+    width: 25%;
+    margin-left: 53px;
+    white-space: nowrap;
+    height: 10vh;
+  }
+  .post-left {
+    display: none;
+  }
+  .post-center {
+    margin-left: -10px;
+    width: 75%;
+  }
+  .valid-date {
+    font-size: 8px;
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,270 @@
+.delivery-view-container {
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 70%;
+  height: 80vh;
+  position: relative;
+  margin-top: 140px;
+  border: 1px solid darkcyan;
+  border-radius: 20px;
+}
+
+.delivery-post-title {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.dtitle {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.dcategory {
+  margin-left: 20px;
+  margin-top: 23px;
+  font-size: 20px;
+  color: white;
+  border-radius: 20px;
+  background-color: darkseagreen;
+  padding: 10px;
+  height: 18px;
+}
+
+.delivery-information {
+  margin-left: 50px;
+}
+
+.delivery-author {
+  font-size: 20px;
+  margin: 0;
+}
+
+.all-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-date {
+  font-size: 20px;
+}
+
+.delivery-valid {
+  font-size: 20px;
+  margin-top: 20px;
+  color: darkred;
+  margin-right: 50px;
+}
+
+.delivery-comment-divider {
+  border-color: azure;
+  width: 95%;
+}
+
+.delvery-sub {
+  margin-left: 50px;
+  height: 50%;
+}
+
+.delvery-content {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.low-content {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.people-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.location {
+  margin-top: 5px;
+  margin-left: 30px;
+  display: flex;
+  border: 1px solid #666;
+  border-radius: 20px;
+  padding: 5px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.marker-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.delivery-area {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.delivery-area:hover {
+  color: darkcyan;
+}
+.people-location {
+  display: flex;
+}
+.people-info {
+  display: flex;
+}
+
+.delivery-post-edit {
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+.change-button,
+.delete-button,
+.join-button,
+.join-chat-button,
+.exit-button {
+  font-size: 20px;
+  color: white;
+  border-radius: 20px;
+  background-color: darkseagreen;
+  padding: 15px 30px 15px 30px;
+  border: none;
+  font-family: "NPS";
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.join-chat-button:hover {
+  background-color: darkcyan;
+}
+
+.join-button.disabled {
+  background-color: gray; /* 비활성화된 배경색 */
+  color: white; /* 텍스트 색상 */
+  cursor: not-allowed; /* 마우스 커서 스타일 */
+  border: none;
+}
+
+@media screen and (max-width: 400px) and (max-height: 2316px) {
+  .delivery-view-container {
+    flex-direction: column;
+    height: 75vh;
+    width: 95%;
+    overflow-y: auto;
+    margin-top: 145px;
+  }
+  .delivery-post-title {
+    margin-top: 10px;
+    margin-left: 0px;
+    display: flex;
+  }
+  .dtitle {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    flex: 0 0 72%;
+  }
+  .dcategory {
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 0px;
+    height: 15px;
+    margin-top: 5px;
+  }
+  .delivery-information {
+    margin-left: 20px;
+  }
+
+  .delivery-author {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .all-date {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .delivery-date {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .delivery-valid {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .delvery-sub {
+    margin-left: 20px;
+    height: 50%;
+    margin-right: 20px;
+  }
+
+  .delvery-content {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    word-spacing: 5px;
+  }
+  .low-content {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  .people-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .people-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* 필요한 공간을 모두 차지하도록 설정 */
+  }
+  .people-icon {
+    margin-top: 0px;
+  }
+  .view-delivery-people {
+    font-size: 12px;
+    margin-top: 10px;
+    white-space: nowrap; /* 텍스트가 잘리지 않도록 설정 */
+  }
+  .location {
+    margin-top: 0px;
+    height: 20px;
+    margin-left: 60px;
+    flex-shrink: 0; /* 공간이 부족해도 줄어들지 않도록 설정 */
+  }
+  .marker-icon {
+    margin-top: 0px;
+  }
+  .delivery-area {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-top: 3px;
+  }
+  .delivery-post-edit {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .change-button,
+  .delete-button,
+  .join-button,
+  .join-chat-button,
+  .exit-button {
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 10px 20px 10px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+}

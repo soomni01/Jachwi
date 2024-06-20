@@ -1,0 +1,200 @@
+.delivery-content {
+  position: relative;
+  border: 1px solid grey;
+  width: 80%;
+  height: 85vh;
+  margin: 0 auto;
+  margin-top: 120px;
+  border-radius: 20px;
+}
+.first-select {
+  display: flex;
+  width: 90%;
+}
+.delivery-content h2 {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.category-dropdown {
+  width: 55%;
+}
+.sort-dropdown {
+  width: 60%;
+}
+.select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 요소들을 좌우로 고르게 배치합니다. */
+  align-items: center; /* 요소들을 수직으로 정렬합니다. */
+  margin-top: 10px; /* 필요에 따라 상단 여백 조정 */
+  margin-bottom: 10px;
+}
+
+.category-text,
+.sort-text {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.category-select {
+  margin-top: 10px;
+  margin-left: 30px;
+  flex-direction: row;
+}
+
+.sort-select {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.buttons {
+  margin-right: 30px; /* 버튼 사이의 공간을 설정합니다. */
+}
+
+.delivery-post-button,
+.select-location-button {
+  margin-right: 20px; /* 버튼 사이의 공간을 설정합니다. */
+  right: 0;
+  background-color: darkseagreen;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "NPS";
+}
+
+/* DeliveryList.css */
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "NPS";
+  font-size: 18px;
+  outline: 0;
+  background: white;
+  color: black;
+  border: 1.5px solid darkseagreen;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 70%;
+}
+.podstmodal {
+  background: rgba(0, 0, 0, 0.25);
+  height: 80%;
+  width: 80%;
+}
+
+.post-item h3 {
+  cursor: pointer;
+}
+
+.delivery-list {
+  overflow-y: scroll;
+  height: 550px;
+  margin-top: 50px;
+}
+
+.delivery-list::-webkit-scrollbar {
+  display: none;
+}
+.myposts {
+  margin-left: 50px;
+}
+.who-select {
+  margin-left: 100px;
+  display: flex;
+}
+.my-posts {
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+.all-posts {
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.buttons {
+  display: flex;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 400px) and (max-height: 2316px) {
+  .delivery-content {
+    margin-top: 150px;
+    width: 95%;
+    height: 75vh;
+  }
+
+  .delivery-content h2 {
+    font-size: 14px;
+    margin-bottom: -15px;
+  }
+
+  .select-container {
+    flex-direction: column; /* 작은 화면에서 요소들을 세로로 배치합니다. */
+    align-items: flex-start; /* 요소들을 왼쪽 정렬합니다. */
+  }
+  .first-select {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .category-text,
+  .sort-text {
+    font-size: 12px;
+    margin-right: 5px; /* 작은 화면에서 간격을 없앱니다. */
+  }
+
+  .category-select,
+  .sort-select {
+    width: 80%; /* 작은 화면에서 너비를 꽉 채우도록 설정합니다. */
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
+  .category-dropdown,
+  .sort-dropdown {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .sort-select {
+    margin-left: 0px;
+  }
+
+  .who-select {
+    margin-left: 20px;
+  }
+  .all-posts {
+    font-size: 12px;
+  }
+  .my-posts {
+    font-size: 12px;
+  }
+  .buttons {
+    margin-left: 10px;
+  }
+  .select-location-button,
+  .delivery-post-button {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .select-location-button {
+    margin-right: 10px;
+  }
+  .delivery-list {
+    height: 58%;
+    margin-top: 0px;
+    overflow: scroll;
+  }
+  .post-item {
+    height: 18%;
+  }
+}

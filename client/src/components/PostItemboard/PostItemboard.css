@@ -1,0 +1,38 @@
+.post-itemboard {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2px;
+}
+
+.post-titleboard {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.post-contentboard {
+  font-size: 12px;
+  color: #666;
+  margin: 3px 0;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.post-dateboard {
+  font-size: 10px;
+  color: #999;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.post-authorboard {
+  font-size: 11px;
+  color: #666;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}

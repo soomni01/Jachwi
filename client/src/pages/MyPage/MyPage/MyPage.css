@@ -1,0 +1,209 @@
+.mypage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
+  margin-left: 410px;
+  width: 75%;
+  height: 80vh;
+  position: relative;
+  margin-top: 145px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.mypage-text {
+  font-size: 30px;
+  margin-left: 450px;
+  margin-top: 200px;
+}
+
+.mypage-container h4 {
+  font-size: 16px;
+  color: gray;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  margin-left: 450px;
+}
+
+.mypage-container label {
+  font-size: 18px;
+  margin-left: 450px;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+  width: 460px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 450px;
+  margin-top: 7px;
+}
+
+.email-label {
+  margin-bottom: 20px;
+}
+
+.user-email {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.user-username {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.username-box {
+  display: flex;
+  align-items: center;
+  width: 460px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 450px;
+  margin-top: 7px;
+}
+
+.username-content {
+  display: flex;
+}
+
+.location-box {
+  display: flex;
+  align-items: center;
+  width: 460px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 450px;
+  margin-top: 7px;
+}
+
+.location-label {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.location-content {
+  display: flex;
+}
+
+.user-location {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.edit-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 460px;
+  height: 53px;
+  margin-left: -1px;
+  margin-top: -1px;
+  font-size: 16px;
+  font-family: "NPS";
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: darkseagreen;
+  box-shadow: 1px solid darkseagreen;
+  font-family: "NPS";
+}
+
+.id-edit-button,
+.id-change-button {
+  width: 70px;
+  height: 45px;
+  background-color: darkseagreen;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding: 0;
+  font-family: NPS;
+}
+
+.location-edit-button {
+  width: 120px; /* 주소 입력 버튼의 너비를 늘림 */
+  height: 45px;
+  background-color: darkseagreen;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 15px; /* 주소 입력 버튼을 왼쪽으로 이동 */
+  font-family: NPS;
+}
+
+/* 모바일 환경을 위한 미디어 쿼리 */
+@media screen and (max-width: 904px) and (max-height: 2316px) {
+  .mypage-container {
+    margin-left: 2.5%;
+    width: 95%;
+    height: 75vh;
+    margin-top: 150px;
+  }
+
+  .mypage-text {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .mypage-container h4 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: -8px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .mypage-container label {
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .email-box,
+  .username-box,
+  .location-box,
+  .edit-input {
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  .user-email,
+  .user-location,
+  .user-username {
+    font-size: 16px;
+  }
+
+  .edit-input {
+    font-size: 14px;
+  }
+
+  .id-edit-button,
+  .id-change-button,
+  .location-edit-button {
+    width: 97%;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .location-content {
+    flex-direction: column; /* 요소를 세로로 분리 */
+  }
+}

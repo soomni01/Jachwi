@@ -1,0 +1,243 @@
+.delivery-post-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid grey;
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 140px;
+  border-radius: 20px;
+}
+
+.categoryP-select {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.post-food-dropdown {
+  width: 20%;
+}
+
+.post-date-select {
+  margin-left: 50px;
+  width: 70%;
+}
+
+.post-people-select {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.post-people-dropdown {
+  width: 15%;
+  text-align: center;
+}
+
+.post-location-text {
+  margin-left: 180px;
+  margin-top: 20px;
+  width: 40%;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  font-family: "NPS";
+  border: 2px solid darkseagreen;
+  border-radius: 20px;
+}
+
+.post-location-text :hover {
+  border: none;
+}
+.delivery-post-content h2 {
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.post-left-content,
+.post-right-content {
+  width: calc(50% - 5px); /* 너비를 50%로 설정하여 좌우에 공간을 나눔 */
+}
+
+.middle-divider {
+  margin: 0 auto;
+  width: 2px; /* 구분선 너비 조정 */
+  background-color: gainsboro; /* 구분선 색상 설정 */
+  margin-top: 70px;
+  height: 80%;
+  margin-right: 30px;
+}
+
+.post-left-content {
+  flex-grow: 0.5;
+}
+.post-right-content {
+  flex-grow: 0.5; /* 우측 컨텐츠가 남은 공간을 채우도록 설정 */
+}
+.post-right-content h2 {
+  font-size: 24px;
+}
+
+.post-delivery-title {
+  margin-top: 50px;
+}
+
+.post-delivery-detail {
+  margin-top: 30px;
+}
+
+.post-delivery-title input {
+  margin-left: 50px;
+  width: 80%;
+  height: 40px;
+}
+
+.post-delivery-detail textarea {
+  margin-left: 50px;
+  width: 80%;
+  height: 350px;
+  resize: none;
+  overflow-y: scroll;
+  resize: none;
+}
+
+.post-delivery-input-text {
+  padding: 10px;
+  font-family: "NPS";
+  font-size: 18px;
+}
+
+.post-delivery-button {
+  background-color: darkseagreen;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-family: "NPS";
+
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.post-kakaomap {
+  margin-left: 50px;
+  width: 85%;
+  height: 300px;
+}
+
+@media screen and (max-width: 400px) and (max-height: 2316px) {
+  .delivery-post-content {
+    flex-direction: column;
+    height: 75vh;
+    width: 95%;
+    overflow-y: auto;
+  }
+
+  .post-left-content,
+  .post-right-content {
+    width: 90%; /* 모바일에서 전체 너비를 가짐 */
+    margin-left: 2px;
+  }
+  .middle-divider {
+    display: none;
+  }
+
+  .categoryP-select {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 60%;
+    margin-bottom: 0px;
+  }
+  .post-category-text {
+    font-size: 14px;
+  }
+  .delivery-post-content h2 {
+    font-size: 14px;
+    margin-left: 20px; /* 왼쪽 여백 조정 */
+  }
+  .post-food-dropdown {
+    width: 100%;
+    height: 30%;
+    font-size: 14px;
+  }
+
+  .post-date-select {
+    margin-left: 20px;
+    width: 92%;
+  }
+  .post-people-select {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .post-people-dropdown {
+    width: 25%;
+    font-size: 14px;
+  }
+
+  .post-kakaomap {
+    width: 290px;
+    height: 200px;
+    margin-left: 20px;
+  }
+
+  .post-location-text {
+    height: 30px;
+    margin-left: 65px;
+    width: 60%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .post-delivery-title h2 {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .post-delivery-title {
+    margin-left: 20px; /* 왼쪽 여백 조정 */
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .post-delivery-detail h2 {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .post-delivery-detail {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .post-delivery-title input {
+    margin-left: 0px;
+    width: 90%;
+    height: 20px;
+    font-size: 14px;
+    overflow-y: scroll;
+  }
+
+  .post-delivery-detail textarea {
+    margin-left: 0px;
+    width: 90%;
+    height: 150px;
+    font-size: 14px;
+    overflow-y: scroll;
+  }
+  .post-delivery-button {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    font-size: 18px;
+    padding: 5px 25px 5px 25px;
+  }
+}

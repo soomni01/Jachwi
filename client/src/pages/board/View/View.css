@@ -1,0 +1,396 @@
+.view-container {
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 70%;
+  height: 80vh;
+  position: relative;
+  margin-top: 140px;
+  border: 1px solid grey; /* 테두리를 회색으로 설정합니다. */
+  border-radius: 20px; /* 테두리의 모서리를 둥글게 만듭니다. */
+}
+
+.view h2 {
+  margin-left: 50px;
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.author {
+  margin: 0 150px 0 50px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.date {
+  margin: 0 150px 0 50px;
+  font-size: 15px;
+  padding-bottom: 20px; /* 구분선과 내용 사이의 간격을 조절합니다. */
+}
+
+.text-content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 2px solid gray; /* 회색 구분선을 추가합니다. */
+}
+
+.options-divider {
+  margin: -1px;
+  color: #ccc;
+}
+.view {
+  position: relative; /* 부모 요소를 상대적으로 위치시킵니다. */
+}
+
+.options-menu {
+  position: absolute;
+  display: flex;
+  justify-self: flex-end;
+  cursor: pointer;
+  top: -5px;
+  right: 0;
+  align-items: center;
+}
+
+.options-menu svg {
+  width: 50px; /* 아이콘의 너비를 조절합니다. */
+  height: 50px; /* 아이콘의 높이를 조절합니다. */
+  color: darkseagreen;
+}
+
+.options-popup {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: calc(10%); /* 햄버거 버튼 아래에 위치하도록 조정 */
+  right: -120px; /* 오른쪽 정렬 */
+  border: 3px solid gainsboro; /* 회색 테두리 설정 */
+  border-radius: 10px; /* 버튼을 둥글게 만듭니다. */
+}
+
+.options-popup button {
+  display: block;
+  width: 100%; /* 버튼 너비 */
+  height: 50px;
+  margin: 0 auto; /* 위아래 여백 설정 */
+  padding: 10px 0; /* 상하 여백 조절 */
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "NPS";
+}
+
+.options-popup button + button {
+  border-top: fixed;
+}
+
+.content-container {
+  position: relative;
+  height: 250px;
+}
+
+.like-button {
+  position: absolute;
+  margin-right: 30px;
+  margin-bottom: 5px;
+  width: 50px;
+  cursor: pointer;
+  bottom: 0; /* 아래쪽 여백을 0으로 설정하여 하단에 고정 */
+  right: 0; /* 오른쪽 여백을 0으로 설정하여 우측에 고정 */
+}
+
+.comments-container h3 {
+  width: 90%;
+  margin: 0 auto;
+
+  padding: 10px;
+  border-top: 2px solid grey; /* 회색 구분선을 추가합니다. */
+  border-bottom: 2px solid grey; /* 회색 구분선을 추가합니다. */
+}
+
+.comment-form {
+  display: flex; /* 자식 요소를 수평으로 배치합니다. */
+  align-items: flex-start; /* 수직 정렬을 시작점으로 설정합니다. */
+}
+
+.comment-form textarea {
+  flex: 1;
+  margin-left: 50px;
+  margin-top: 15px;
+  height: 40px; /* 원하는 높이로 설정 */
+  border: 2px solid darkseagreen; /* 테두리 두껍게 설정 */
+  border-radius: 10px; /* 둥글게 모양 주기 */
+  padding: 10px; /* 내부 여백 추가 */
+  font-family: "NPS";
+  font-size: 16px;
+  resize: none;
+}
+
+/* 내용 입력란의 빨간 밑줄 제거 */
+.comment-container textarea:invalid {
+  border-bottom-color: none;
+}
+
+.comment-button {
+  border-radius: 10px;
+  background-color: darkseagreen;
+  border: none;
+  width: 80px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+  color: #f0f0f0;
+  height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "NPS";
+}
+
+.options-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.options-form textarea {
+  flex: 1;
+  display: inline-block;
+  width: 300px;
+  height: 18px; /* 원하는 높이로 설정 */
+  border-radius: 10px; /* 둥글게 모양 주기 */
+  padding: 10px; /* 내부 여백 추가 */
+  font-family: "NPS";
+  font-size: 13px;
+  resize: none;
+}
+
+.options-form textarea:focus {
+  border: 2px solid green; /* 포커스를 받으면 테두리 색상을 초록색으로 변경합니다. */
+}
+
+.edit-comment-confirm-button {
+  background-color: darkseagreen;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "NPS";
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  width: 60px;
+  margin-right: 20px;
+}
+/*---------------------*/
+
+.recomment-toggle-button {
+  background-color: rgb(160, 207, 154);
+  font-family: "NPS";
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.all-comments-container {
+  height: 200px;
+  margin-left: 50px;
+  margin-right: 30px;
+  overflow-y: scroll;
+}
+.all-comments-container::-webkit-scrollbar {
+  display: none;
+}
+
+.comment-divider {
+  border: none;
+  border-top: 1px solid black; /* 얇은 회색 선으로 밑줄 표시 */
+  margin-top: 10px; /* 밑줄 위아래 여백 조절 */
+}
+
+.comment p {
+  font-size: 13px; /* 원하는 크기로 설정 */
+}
+
+.recomment-info {
+  display: flex;
+  margin-top: 5px;
+  border-top: 1px solid #ccc;
+}
+
+.recomment-author {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+
+.delete-recomment-button {
+  background-color: rgb(160, 207, 154);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "NPS";
+  font-size: 12px;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.author-options {
+  display: flex;
+  margin: 0%;
+}
+
+.comment-author {
+  margin-right: 10px;
+}
+
+.comment-content {
+  margin: 0%;
+  margin-bottom: 15px;
+}
+
+.comment-options-buttons {
+  margin-top: 10px;
+}
+
+.edit-comment-button,
+.delete-comment-button {
+  background-color: rgb(160, 207, 154);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "NPS";
+  font-size: 12px;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.recomment-comment {
+  margin: 0%;
+}
+
+.recomment-textarea {
+  display: flex;
+  align-items: flex-start;
+}
+.recomment-button {
+  background-color: darkseagreen;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "NPS";
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.recomment-textarea textarea {
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: "NPS";
+  height: 30px;
+  resize: none;
+}
+
+.board-view-category {
+  color: darkcyan;
+  margin-right: 10px;
+}
+@media screen and (max-width: 400px) and (max-height: 2316px) {
+  .view-container {
+    flex-direction: column;
+    height: 75vh;
+    width: 95%;
+    overflow-y: auto;
+    margin-top: 145px;
+  }
+  .view-container::-webkit-scrollbar {
+    display: none;
+  }
+  .view h2 {
+    margin-left: 20px;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .author {
+    margin-left: 20px;
+  }
+  .date {
+    margin-left: 20px;
+  }
+  .text-content {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 20px;
+  }
+  .like-button {
+    margin-right: 10px;
+    width: 40px;
+  }
+  .comment-form textarea {
+    margin-left: 20px;
+    height: 18px;
+    font-size: 14px;
+    width: 90%;
+  }
+  .comment-button {
+    font-size: 14px;
+    width: 15%;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 15px;
+    height: 40px;
+  }
+  .all-comments-container {
+    margin-left: 20px;
+  }
+  .author-options {
+    display: block;
+  }
+  .comment-content {
+    margin-bottom: 10px;
+  }
+  .recomment-button {
+    font-size: 12px;
+    width: 15%;
+    height: 30px;
+    margin-left: 5px;
+    padding: 5px;
+  }
+  .options-menu {
+    top: 60px;
+    right: 0;
+  }
+  .options-menu svg {
+    width: 30px;
+    height: auto;
+  }
+  .options-popup {
+    right: -25px;
+    top: calc(-230%);
+    width: 50px;
+    height: 60px;
+  }
+  .options-popup button {
+    font-size: 12px;
+    padding: 5px;
+    height: 30px;
+  }
+  .delete-option-button {
+    height: 30px;
+  }
+}

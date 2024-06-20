@@ -1,0 +1,185 @@
+.mypagewithdraw-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 10px;
+  margin-left: 410px;
+  width: 75%;
+  height: 80vh;
+  position: relative;
+  margin-top: 145px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.mypagewithdraw-container h1 {
+  font-size: 30px;
+  margin-top: 280px;
+  margin-left: 350px;
+}
+
+.mypagewithdraw-container h4 {
+  font-size: 16px;
+  color: gray;
+  margin-top: -10px;
+  margin-left: 350px;
+}
+
+.password-input-container {
+  margin-bottom: 20px;
+}
+
+.password-input-container label {
+  font-size: 18px;
+}
+
+.password-input-container input[type="password"] {
+  margin-top: 8px;
+  margin-left: 350px;
+  width: 48.5%;
+  height: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-input-container input[type="password"]:focus {
+  outline: none;
+  border-color: darkseagreen;
+  box-shadow: 1px solid darkseagreen;
+}
+
+.password-input-container input[type="password"]::placeholder {
+  color: #aaa;
+  font-family: NPS;
+}
+
+.withdraw-button {
+  width: 50%;
+  height: 45px;
+  margin-left: 350px;
+  background-color: darkseagreen;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: NPS;
+}
+
+.error-message {
+  color: #ccc;
+  font-size: 15px;
+  margin-top: -170px;
+  margin-left: 765px;
+}
+
+.modal-withdraw {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* 세로와 가로의 절반만큼 이동하여 중앙에 정렬 */
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  width: 400px;
+  height: 150px;
+}
+
+.modal-withdraw h2 {
+  font-size: 25px;
+  margin-top: 12px;
+}
+
+.modal-withdraw p {
+  font-size: 16px;
+  margin-top: -8px;
+  margin-left: 2px;
+  margin-bottom: 45px;
+}
+
+.modal-withdraw-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirm-button,
+.cancel-button {
+  padding: 13px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: NPS;
+}
+
+.confirm-button {
+  background-color: darkseagreen;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #333;
+}
+
+@media screen and (max-width: 904px) and (max-height: 2316px) {
+  .mypagewithdraw-container {
+    margin-left: 2.5%;
+    width: 95%;
+    height: 75vh;
+    margin-top: 150px;
+  }
+
+  .mypagewithdraw-container h1 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+
+  .mypagewithdraw-container h4 {
+    font-size: 13px;
+    margin-top: -8px;
+    margin-left: 10px;
+  }
+
+  .password-input-container input[type="password"] {
+    margin-left: 5px;
+    width: 90%;
+  }
+
+  .withdraw-button {
+    margin-left: 5px;
+    width: 97%;
+  }
+
+  .error-message {
+    font-size: 13px;
+    margin-top: -430px;
+    margin-left: 20px;
+  }
+
+  .modal-withdraw {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .modal-withdraw p {
+    margin-left: 0;
+  }
+
+  .confirm-button,
+  .cancel-button {
+    width: 21%;
+    padding: 10px;
+  }
+}
